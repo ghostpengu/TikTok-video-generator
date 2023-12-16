@@ -1,12 +1,12 @@
 import requests, base64, random, argparse, os, playsound, time, re, textwrap,random
-import whisper
+
 # https://twitter.com/scanlime/status/1512598559769702406
 from moviepy.editor import VideoFileClip, AudioFileClip
 from moviepy.audio.fx.all import audio_fadein, audio_fadeout
 from pydub import AudioSegment
 from pydub.playback import play
 
-model = whisper.load_model("base")
+
 
 
 voices = [
@@ -175,7 +175,7 @@ def split_string(input_string, max_length=300):
     return parts
 
 # Example usage:
-input_string = input(":")
+input_string = input("promt:")
 result = split_string(input_string)
 mp3_files = []
 # Print the result
