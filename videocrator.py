@@ -1,4 +1,4 @@
-import requests, base64, random, argparse, os, playsound, time, re, textwrap,random
+import requests, base64, random, argparse, os,time, re, textwrap,random
 
 # https://twitter.com/scanlime/status/1512598559769702406
 from moviepy.editor import VideoFileClip, AudioFileClip
@@ -108,9 +108,7 @@ def tts(session_id: str, text_speaker: str = "en_au_001", req_text: str = "TikTo
 
     print(output_data)
 
-    if play is True:
-        playsound.playsound(filename)
-        os.remove(filename)
+
 
     return output_data
 
